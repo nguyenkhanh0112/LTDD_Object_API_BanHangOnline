@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="15dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:id="@+id/item_image"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/cellphone"/>
+    <TextView
+        android:id="@+id/item_tenSP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:textColor="#FF8A80"
+        android:text="Điện Thoại"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

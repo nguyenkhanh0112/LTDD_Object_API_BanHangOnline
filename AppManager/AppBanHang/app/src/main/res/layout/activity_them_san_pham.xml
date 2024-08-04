@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.ThemSanPhamActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:background="#9E9E9E"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Thêm sản phẩm"
+        android:id="@+id/toolbar_Themsp"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_red_light"
+            android:text="Tên sản phẩm: "/>
+
+        <EditText
+            android:id="@+id/edit_tensp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="tensanpham"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_red_light"
+            android:text="Giá sản phâm: "/>
+
+        <EditText
+            android:id="@+id/edit_giasp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="gia san pham"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="5"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Link hình ảnh:"
+            android:textColor="@android:color/holo_red_light"/>
+
+        <EditText
+            android:id="@+id/edit_linkhinhanh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="link hình ảnh sản phẩm"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_red_light"
+            android:text="Mô tả sản phẩm: "/>
+
+        <EditText
+            android:id="@+id/edit_mota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="mô tả sản phẩm"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinnerLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:minHeight="48dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/them_spsp"
+        android:layout_marginRight="20dp"
+        android:text="Thêm sản phẩm"
+        android:textSize="20sp"/>
+</LinearLayout>
